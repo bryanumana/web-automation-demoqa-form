@@ -1,2 +1,47 @@
-11:02:41.867 INFO  AUTOMATION - Iniciando BaseTests
-11:02:45.509 INFO  AUTOMATION - Entrando a la página
+17:37:59.105 INFO  AUTOMATION - Iniciando...
+17:38:02.958 INFO  AUTOMATION - Abrir página con el navegador
+17:38:07.076 INFO  AUTOMATION - Escribiendo el First Name
+17:38:07.490 INFO  AUTOMATION - Escribiendo el Last Name
+17:38:07.636 INFO  AUTOMATION - Seleccionando el botón Sumbit
+17:38:07.933 INFO  AUTOMATION - Iniciando...
+17:38:08.016 INFO  AUTOMATION - Abrir página con el navegador
+17:38:11.364 INFO  AUTOMATION - Escribiendo el Email
+17:38:11.543 INFO  AUTOMATION - Seleccionando el botón Sumbit
+17:38:11.750 INFO  AUTOMATION - Iniciando...
+17:38:11.827 INFO  AUTOMATION - Abrir página con el navegador
+17:38:22.461 INFO  AUTOMATION - Diligenciar la dirección
+17:38:22.662 INFO  AUTOMATION - Seleccionando el botón Sumbit
+17:38:22.961 INFO  AUTOMATION - Iniciando...
+17:38:23.040 INFO  AUTOMATION - Abrir página con el navegador
+17:38:28.222 INFO  AUTOMATION - Seleccionar el estado
+17:38:28.406 INFO  AUTOMATION - Seleccionar la ciudad
+17:38:28.573 INFO  AUTOMATION - Seleccionando el botón Sumbit
+17:38:28.817 INFO  AUTOMATION - Iniciando...
+17:38:28.902 INFO  AUTOMATION - Abrir página con el navegador
+17:38:32.752 INFO  AUTOMATION - Escribiendo el Numero Telefono
+17:38:32.895 INFO  AUTOMATION - Seleccionando el botón Sumbit
+17:38:33.139 INFO  AUTOMATION - Iniciando...
+17:38:33.231 INFO  AUTOMATION - Abrir página con el navegador
+17:38:36.641 INFO  AUTOMATION - Subiendo foto
+17:38:36.754 INFO  AUTOMATION - Seleccionando el botón Sumbit
+17:38:36.975 INFO  AUTOMATION - Iniciando...
+17:38:37.054 INFO  AUTOMATION - Abrir página con el navegador
+17:38:40.501 INFO  AUTOMATION - Seleccionando materias
+17:38:41.696 INFO  AUTOMATION - Seleccionando el botón Sumbit
+17:38:41.864 INFO  AUTOMATION - Iniciando...
+17:38:41.946 INFO  AUTOMATION - Abrir página con el navegador
+17:38:45.172 INFO  AUTOMATION - Seleccionar el campo de texto de la fecha
+17:38:45.463 INFO  AUTOMATION - Seleccionar el mes
+17:38:45.600 INFO  AUTOMATION - Seleccionar el año
+17:38:45.723 INFO  AUTOMATION - Seleccionar el día
+17:38:45.896 INFO  AUTOMATION - Seleccionando el botón Sumbit
+17:38:46.095 INFO  AUTOMATION - Iniciando...
+17:38:46.177 INFO  AUTOMATION - Abrir página con el navegador
+17:38:50.796 INFO  AUTOMATION - Seleccionando el gender
+17:38:50.974 INFO  AUTOMATION - Seleccionando el botón Sumbit
+17:38:51.220 INFO  AUTOMATION - Iniciando...
+17:38:51.315 INFO  AUTOMATION - Abrir página con el navegador
+17:38:54.694 INFO  AUTOMATION - Seleccionando deportes
+17:38:54.848 INFO  AUTOMATION - Seleccionando lectura
+17:38:55.011 INFO  AUTOMATION - Seleccionando musica
+17:38:55.196 INFO  AUTOMATION - Seleccionando el botón Sumbit
