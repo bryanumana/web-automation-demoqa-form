@@ -1,11 +1,11 @@
-package automations;
+package tests;
 
+import actions.SumbitActions;
 import annotations.PruebaExitosa;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import net.datafaker.Faker;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import utilities.AllureUtils;
 import utilities.BaseTests;
@@ -22,28 +22,18 @@ import java.util.Locale;
 public class ExampleTest extends BaseTests {
     private final Faker faker = new Faker();
 
-    @BeforeEach
-    public void openWebsite(Page page) {
-        final var url = page.url();
-        Logs.info("Abrir página con el navegador");
-        page.navigate("https://demoqa.com/automation-practice-form");
-        AllureUtils.stepWithScreenshot(page, "Abrir página con el navegador");
-        page.evaluate("document.querySelector('iframe').style.display = 'none'");
-        page.evaluate("document.querySelector('iframe').remove()");
-    }
-
     @Test
     public void fillNameAndLastName(Page page) {
 
         Logs.info("Escribiendo el First Name");
         page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("First Name"))
                 .fill(faker.name().firstName());
-        AllureUtils.stepWithScreenshot(page, "Diligenciando el First Name");
+        AllureUtils.infoStepWithScreenshot(page, "Diligenciando el First Name");
 
         Logs.info("Escribiendo el Last Name");
         page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Last Name"))
                 .fill(faker.name().lastName());
-        AllureUtils.stepWithScreenshot(page, "Diligenciando el Last Name");
+        AllureUtils.infoStepWithScreenshot(page, "Diligenciando el Last Name");
 
     }
 
@@ -53,7 +43,7 @@ public class ExampleTest extends BaseTests {
         Logs.info("Escribiendo el Email");
         page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("name@example.com"))
                 .fill(faker.internet().emailAddress());
-        AllureUtils.stepWithScreenshot(page, "Escribiendo el Email");
+        AllureUtils.infoStepWithScreenshot(page, "Escribiendo el Email");
     }
 
     @Test
@@ -61,7 +51,7 @@ public class ExampleTest extends BaseTests {
 
         Logs.info("Seleccionando el gender");
         page.locator("label[for='gender-radio-1']").click();
-        AllureUtils.stepWithScreenshot(page, "Seleccionando el gender");
+        AllureUtils.infoStepWithScreenshot(page, "Seleccionando el gender");
 
     }
 
@@ -71,7 +61,7 @@ public class ExampleTest extends BaseTests {
         Logs.info("Escribiendo el Numero Telefono");
         page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Mobile Number"))
                 .fill(String.valueOf(faker.number().randomNumber(10)));
-        AllureUtils.stepWithScreenshot(page, "Escribiendo el Numero Telefono");
+        AllureUtils.infoStepWithScreenshot(page, "Escribiendo el Numero Telefono");
     }
 
     @Test
@@ -82,19 +72,19 @@ public class ExampleTest extends BaseTests {
 
         Logs.info("Seleccionar el campo de texto de la fecha");
         page.locator("#dateOfBirthInput").click();
-        AllureUtils.stepWithScreenshot(page, "Seleccionar el campo de texto de la fecha");
+        AllureUtils.infoStepWithScreenshot(page, "Seleccionar el campo de texto de la fecha");
 
         Logs.info("Seleccionar el mes");
         page.selectOption(".react-datepicker__month-select", month);
-        AllureUtils.stepWithScreenshot(page, "Seleccionar el mes");
+        AllureUtils.infoStepWithScreenshot(page, "Seleccionar el mes");
 
         Logs.info("Seleccionar el año");
         page.selectOption(".react-datepicker__year-select", String.valueOf(2000));
-        AllureUtils.stepWithScreenshot(page, "Seleccionar el año");
+        AllureUtils.infoStepWithScreenshot(page, "Seleccionar el año");
 
         Logs.info("Seleccionar el día");
         page.click("div[aria-label*='1st']");
-        AllureUtils.stepWithScreenshot(page, "Seleccionar el día");
+        AllureUtils.infoStepWithScreenshot(page, "Seleccionar el día");
     }
 
     @Test
@@ -109,7 +99,7 @@ public class ExampleTest extends BaseTests {
             page.locator("#subjectsInput").press("Enter");
             page.waitForTimeout(500);
         }
-        AllureUtils.stepWithScreenshot(page, "Seleccionando materias");
+        AllureUtils.infoStepWithScreenshot(page, "Seleccionando materias");
 
     }
 
@@ -118,15 +108,15 @@ public class ExampleTest extends BaseTests {
 
         Logs.info("Seleccionando deportes");
         page.locator("label[for='hobbies-checkbox-1']").click();
-        AllureUtils.stepWithScreenshot(page, "Seleccionando deportes");
+        AllureUtils.infoStepWithScreenshot(page, "Seleccionando deportes");
 
         Logs.info("Seleccionando lectura");
         page.locator("label[for='hobbies-checkbox-2']").click();
-        AllureUtils.stepWithScreenshot(page, "Seleccionando lectura");
+        AllureUtils.infoStepWithScreenshot(page, "Seleccionando lectura");
 
         Logs.info("Seleccionando musica");
         page.locator("label[for='hobbies-checkbox-3']").click();
-        AllureUtils.stepWithScreenshot(page, "Seleccionando musica");
+        AllureUtils.infoStepWithScreenshot(page, "Seleccionando musica");
 
     }
 
@@ -142,7 +132,7 @@ public class ExampleTest extends BaseTests {
         } else {
             Logs.error("Archivo no encontrado");
         }
-        AllureUtils.stepWithScreenshot(page, "Subiendo foto");
+        AllureUtils.infoStepWithScreenshot(page, "Subiendo foto");
     }
 
     @Test
@@ -151,7 +141,7 @@ public class ExampleTest extends BaseTests {
         Logs.info("Diligenciar la dirección");
         page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Current Address"))
                 .fill(faker.address().streetAddress());
-        AllureUtils.stepWithScreenshot(page, "Diligenciar la dirección");
+        AllureUtils.infoStepWithScreenshot(page, "Diligenciar la dirección");
     }
 
     @Test
@@ -161,21 +151,18 @@ public class ExampleTest extends BaseTests {
         page.click("#state");
         page.fill("#react-select-3-input", "NCR");
         page.keyboard().press("Enter");
-        AllureUtils.stepWithScreenshot(page, "Seleccionar el estado");
+        AllureUtils.infoStepWithScreenshot(page, "Seleccionar el estado");
 
         Logs.info("Seleccionar la ciudad");
         page.click("#city");
         page.fill("#react-select-4-input", "Delhi");
         page.keyboard().press("Enter");
-        AllureUtils.stepWithScreenshot(page, "Seleccionar la ciudad");
+        AllureUtils.infoStepWithScreenshot(page, "Seleccionar la ciudad");
     }
 
     @AfterEach
     public void afterEach(Page page) {
-
-        Logs.info("Seleccionando el botón Sumbit");
-        page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Submit"))
-                .click();
-        AllureUtils.stepWithScreenshot(page, "Seleccionando el botón Sumbit");
+        SumbitActions sumbitActions = new SumbitActions(page);
+        sumbitActions.clickSubmit(page);
     }
 }

@@ -7,7 +7,14 @@ import io.qameta.allure.Step;
 public class AllureUtils {
 
     @Step("{stepName}")
-    public static void stepWithScreenshot(Page page, String stepName) {
+    public static void infoStepWithScreenshot(Page page, String stepName) {
+        Logs.info(stepName);
+        attachScreenshot(page);
+    }
+
+    @Step("{stepName}")
+    public static void errorStepWithScreenshot(Page page, String stepName) {
+        Logs.error(stepName);
         attachScreenshot(page);
     }
 

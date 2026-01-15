@@ -5,24 +5,22 @@
     </Properties>
 
     <appenders>
-        <File name="logsInfo" fileName="src/test/resources/logs/informativeLogs.log" append="false">
+        <File name="logsAll" fileName="src/test/resources/logs/logsAll.log" append="false">
             <PatternLayout pattern="${pattern}"/>
         </File>
 
-        <File name="logsDebug" fileName="src/test/resources/logs/debugLogs.log" append="false">
+        <File name="logsError" fileName="src/test/resources/logs/logsError.log" append="false">
             <PatternLayout pattern="${pattern}"/>
-        </File>
-
-        <File name="logsTrace" fileName="src/test/resources/logs/traceLogs.log" append="false">
-            <PatternLayout pattern="${pattern}"/>
+            <Filters>
+                <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
         </File>
     </appenders>
 
     <loggers>
         <root level="trace">
-            <appender-ref ref="logsInfo" level="info"/>
-            <appender-ref ref="logsDebug" level="debug"/>
-            <appender-ref ref="logsTrace" level="trace"/>
+            <appender-ref ref="logsAll" level="info"/>
+            <appender-ref ref="logsError" level="error"/>
         </root>
     </loggers>
 </configuration>
