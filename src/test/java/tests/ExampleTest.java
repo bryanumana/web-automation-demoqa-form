@@ -21,23 +21,6 @@ public class ExampleTest extends BaseTests {
     private final Faker faker = new Faker();
 
     @Test
-    public void selectGender(Page page) {
-
-        Logs.info("Seleccionando el gender");
-        page.locator("label[for='gender-radio-1']").click();
-        AllureUtils.debugStepWithScreenshot(page, "Seleccionando el gender");
-
-    }
-
-    @Test
-    public void fillMobileNumber(Page page) {
-
-        Logs.info("Escribiendo el Numero Telefono");
-
-        AllureUtils.debugStepWithScreenshot(page, "Escribiendo el Numero Telefono");
-    }
-
-    @Test
     public void setDateOfBirth(Page page) {
         String month = Month.of(faker.number().numberBetween(1, 13))
                 .getDisplayName(TextStyle.FULL, Locale.ENGLISH);

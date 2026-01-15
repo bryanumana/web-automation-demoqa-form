@@ -1,6 +1,5 @@
-15:15:51.736 INFO  AUTOMATION - Test: nofillMobile
-15:15:52.145 ERROR AUTOMATION - Mobile field is wrong
-15:15:57.063 INFO  AUTOMATION - Test: fillValidMobileElevenDigits
-15:16:00.432 INFO  AUTOMATION - Test: fillValidMobileTenDigits
-15:16:05.653 INFO  AUTOMATION - Test: fillValidMobileNineDigits
-15:16:06.047 ERROR AUTOMATION - Mobile field is wrong
+15:58:43.947 INFO  AUTOMATION - Test: selectGenderOther
+15:58:48.763 INFO  AUTOMATION - Test: selectGenderMale
+15:58:53.658 INFO  AUTOMATION - Test: noSelectGender
+15:58:53.831 ERROR AUTOMATION - Gender button is not checked
+15:58:58.167 INFO  AUTOMATION - Test: selectGenderFemale

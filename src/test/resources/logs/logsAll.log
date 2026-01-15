@@ -1,18 +1,16 @@
-15:15:51.567 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
-15:15:51.736 INFO  AUTOMATION - Test: nofillMobile
-15:15:51.751 DEBUG AUTOMATION - Fill Mobile field: 
-15:15:51.990 DEBUG AUTOMATION - Click on the button
-15:15:52.145 ERROR AUTOMATION - Mobile field is wrong
-15:15:56.908 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
-15:15:57.063 INFO  AUTOMATION - Test: fillValidMobileElevenDigits
-15:15:57.078 DEBUG AUTOMATION - Fill Mobile field: 71843027613
-15:15:57.290 DEBUG AUTOMATION - Click on the button
-15:16:00.305 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
-15:16:00.432 INFO  AUTOMATION - Test: fillValidMobileTenDigits
-15:16:00.445 DEBUG AUTOMATION - Fill Mobile field: 1741341714
-15:16:00.632 DEBUG AUTOMATION - Click on the button
-15:16:05.519 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
-15:16:05.653 INFO  AUTOMATION - Test: fillValidMobileNineDigits
-15:16:05.666 DEBUG AUTOMATION - Fill Mobile field: 077917971
-15:16:05.853 DEBUG AUTOMATION - Click on the button
-15:16:06.047 ERROR AUTOMATION - Mobile field is wrong
+15:58:43.770 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
+15:58:43.947 INFO  AUTOMATION - Test: selectGenderOther
+15:58:44.003 DEBUG AUTOMATION - Fill Email field: Other
+15:58:44.243 DEBUG AUTOMATION - Click on the button
+15:58:48.573 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
+15:58:48.763 INFO  AUTOMATION - Test: selectGenderMale
+15:58:48.801 DEBUG AUTOMATION - Fill Email field: Male
+15:58:48.984 DEBUG AUTOMATION - Click on the button
+15:58:53.483 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
+15:58:53.658 INFO  AUTOMATION - Test: noSelectGender
+15:58:53.704 DEBUG AUTOMATION - Click on the button
+15:58:53.831 ERROR AUTOMATION - Gender button is not checked
+15:58:57.947 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
+15:58:58.167 INFO  AUTOMATION - Test: selectGenderFemale
+15:58:58.210 DEBUG AUTOMATION - Fill Email field: Female
+15:58:58.368 DEBUG AUTOMATION - Click on the button

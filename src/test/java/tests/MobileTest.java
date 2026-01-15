@@ -2,7 +2,6 @@ package tests;
 
 import actions.MobileActions;
 import actions.SumbitActions;
-import annotations.PruebaExitosa;
 import com.microsoft.playwright.Page;
 import net.datafaker.Faker;
 import org.junit.jupiter.api.Test;
@@ -16,7 +15,6 @@ public class MobileTest extends BaseTests {
     private String mobileNumerNineDigits = faker.number().digits(9);
 
     @Test
-    @PruebaExitosa
     public void fillValidMobileTenDigits(Page page) {
         SumbitActions sumbitActions = new SumbitActions(page);
         MobileActions mobileActions = new MobileActions(page);
@@ -29,7 +27,6 @@ public class MobileTest extends BaseTests {
     }
 
     @Test
-    @PruebaExitosa
     public void fillValidMobileElevenDigits(Page page) {
         SumbitActions sumbitActions = new SumbitActions(page);
         MobileActions mobileActions = new MobileActions(page);
@@ -42,7 +39,6 @@ public class MobileTest extends BaseTests {
     }
 
     @Test
-    @PruebaExitosa
     public void fillValidMobileNineDigits(Page page) {
         SumbitActions sumbitActions = new SumbitActions(page);
         MobileActions mobileActions = new MobileActions(page);
@@ -55,12 +51,11 @@ public class MobileTest extends BaseTests {
     }
 
     @Test
-    @PruebaExitosa
-    public void nofillMobile(Page page) {
+    public void noFillMobile(Page page) {
         SumbitActions sumbitActions = new SumbitActions(page);
         MobileActions mobileActions = new MobileActions(page);
 
-        Logs.info("Test: nofillMobile");
+        Logs.info("Test: noFillMobile");
         mobileActions.fillMobile("");
         sumbitActions.clickSubmit(page);
 
