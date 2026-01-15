@@ -1,7 +1,6 @@
 package tests;
 
 import actions.SumbitActions;
-import annotations.PruebaExitosa;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import net.datafaker.Faker;
@@ -26,14 +25,12 @@ public class ExampleTest extends BaseTests {
     public void fillNameAndLastName(Page page) {
 
         Logs.info("Escribiendo el First Name");
-        page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("First Name"))
-                .fill(faker.name().firstName());
-        AllureUtils.infoStepWithScreenshot(page, "Diligenciando el First Name");
+
+        AllureUtils.debugStepWithScreenshot(page, "Diligenciando el First Name");
 
         Logs.info("Escribiendo el Last Name");
-        page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Last Name"))
-                .fill(faker.name().lastName());
-        AllureUtils.infoStepWithScreenshot(page, "Diligenciando el Last Name");
+
+        AllureUtils.debugStepWithScreenshot(page, "Diligenciando el Last Name");
 
     }
 
@@ -43,7 +40,7 @@ public class ExampleTest extends BaseTests {
         Logs.info("Escribiendo el Email");
         page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("name@example.com"))
                 .fill(faker.internet().emailAddress());
-        AllureUtils.infoStepWithScreenshot(page, "Escribiendo el Email");
+        AllureUtils.debugStepWithScreenshot(page, "Escribiendo el Email");
     }
 
     @Test
@@ -51,7 +48,7 @@ public class ExampleTest extends BaseTests {
 
         Logs.info("Seleccionando el gender");
         page.locator("label[for='gender-radio-1']").click();
-        AllureUtils.infoStepWithScreenshot(page, "Seleccionando el gender");
+        AllureUtils.debugStepWithScreenshot(page, "Seleccionando el gender");
 
     }
 
@@ -61,30 +58,29 @@ public class ExampleTest extends BaseTests {
         Logs.info("Escribiendo el Numero Telefono");
         page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Mobile Number"))
                 .fill(String.valueOf(faker.number().randomNumber(10)));
-        AllureUtils.infoStepWithScreenshot(page, "Escribiendo el Numero Telefono");
+        AllureUtils.debugStepWithScreenshot(page, "Escribiendo el Numero Telefono");
     }
 
     @Test
-    @PruebaExitosa
     public void setDateOfBirth(Page page) {
         String month = Month.of(faker.number().numberBetween(1, 13))
                 .getDisplayName(TextStyle.FULL, Locale.ENGLISH);
 
         Logs.info("Seleccionar el campo de texto de la fecha");
         page.locator("#dateOfBirthInput").click();
-        AllureUtils.infoStepWithScreenshot(page, "Seleccionar el campo de texto de la fecha");
+        AllureUtils.debugStepWithScreenshot(page, "Seleccionar el campo de texto de la fecha");
 
         Logs.info("Seleccionar el mes");
         page.selectOption(".react-datepicker__month-select", month);
-        AllureUtils.infoStepWithScreenshot(page, "Seleccionar el mes");
+        AllureUtils.debugStepWithScreenshot(page, "Seleccionar el mes");
 
         Logs.info("Seleccionar el año");
         page.selectOption(".react-datepicker__year-select", String.valueOf(2000));
-        AllureUtils.infoStepWithScreenshot(page, "Seleccionar el año");
+        AllureUtils.debugStepWithScreenshot(page, "Seleccionar el año");
 
         Logs.info("Seleccionar el día");
         page.click("div[aria-label*='1st']");
-        AllureUtils.infoStepWithScreenshot(page, "Seleccionar el día");
+        AllureUtils.debugStepWithScreenshot(page, "Seleccionar el día");
     }
 
     @Test
@@ -99,7 +95,7 @@ public class ExampleTest extends BaseTests {
             page.locator("#subjectsInput").press("Enter");
             page.waitForTimeout(500);
         }
-        AllureUtils.infoStepWithScreenshot(page, "Seleccionando materias");
+        AllureUtils.debugStepWithScreenshot(page, "Seleccionando materias");
 
     }
 
@@ -108,15 +104,15 @@ public class ExampleTest extends BaseTests {
 
         Logs.info("Seleccionando deportes");
         page.locator("label[for='hobbies-checkbox-1']").click();
-        AllureUtils.infoStepWithScreenshot(page, "Seleccionando deportes");
+        AllureUtils.debugStepWithScreenshot(page, "Seleccionando deportes");
 
         Logs.info("Seleccionando lectura");
         page.locator("label[for='hobbies-checkbox-2']").click();
-        AllureUtils.infoStepWithScreenshot(page, "Seleccionando lectura");
+        AllureUtils.debugStepWithScreenshot(page, "Seleccionando lectura");
 
         Logs.info("Seleccionando musica");
         page.locator("label[for='hobbies-checkbox-3']").click();
-        AllureUtils.infoStepWithScreenshot(page, "Seleccionando musica");
+        AllureUtils.debugStepWithScreenshot(page, "Seleccionando musica");
 
     }
 
@@ -132,16 +128,7 @@ public class ExampleTest extends BaseTests {
         } else {
             Logs.error("Archivo no encontrado");
         }
-        AllureUtils.infoStepWithScreenshot(page, "Subiendo foto");
-    }
-
-    @Test
-    public void fillAddress(Page page) {
-
-        Logs.info("Diligenciar la dirección");
-        page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Current Address"))
-                .fill(faker.address().streetAddress());
-        AllureUtils.infoStepWithScreenshot(page, "Diligenciar la dirección");
+        AllureUtils.debugStepWithScreenshot(page, "Subiendo foto");
     }
 
     @Test
@@ -151,13 +138,13 @@ public class ExampleTest extends BaseTests {
         page.click("#state");
         page.fill("#react-select-3-input", "NCR");
         page.keyboard().press("Enter");
-        AllureUtils.infoStepWithScreenshot(page, "Seleccionar el estado");
+        AllureUtils.debugStepWithScreenshot(page, "Seleccionar el estado");
 
         Logs.info("Seleccionar la ciudad");
         page.click("#city");
         page.fill("#react-select-4-input", "Delhi");
         page.keyboard().press("Enter");
-        AllureUtils.infoStepWithScreenshot(page, "Seleccionar la ciudad");
+        AllureUtils.debugStepWithScreenshot(page, "Seleccionar la ciudad");
     }
 
     @AfterEach

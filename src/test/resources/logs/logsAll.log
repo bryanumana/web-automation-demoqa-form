@@ -1,10 +1,24 @@
-10:38:06.590 INFO  AUTOMATION - Open website: https://demoqa.com/automation-practice-form
-10:38:06.776 INFO  AUTOMATION - Seleccionar el campo de texto de la fecha
-10:38:06.927 INFO  AUTOMATION - Seleccionar el campo de texto de la fecha
-10:38:07.093 INFO  AUTOMATION - Seleccionar el mes
-10:38:07.105 INFO  AUTOMATION - Seleccionar el mes
-10:38:07.261 INFO  AUTOMATION - Seleccionar el año
-10:38:07.271 INFO  AUTOMATION - Seleccionar el año
-10:38:07.424 INFO  AUTOMATION - Seleccionar el día
-10:38:07.478 INFO  AUTOMATION - Seleccionar el día
-10:38:07.641 INFO  AUTOMATION - Click on the button
+14:22:44.742 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
+14:22:44.903 INFO  AUTOMATION - Test: fillFirstNameNoFillLastName
+14:22:44.925 DEBUG AUTOMATION - Fill First Name field: Genaro
+14:22:45.065 DEBUG AUTOMATION - Fill Last Name field: 
+14:22:45.267 DEBUG AUTOMATION - Click on the button
+14:22:45.424 ERROR AUTOMATION - Last Name field is wrong
+14:22:49.865 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
+14:22:50.008 INFO  AUTOMATION - Test: noFillFirstNameNoFillLastName
+14:22:50.020 DEBUG AUTOMATION - Fill First Name field: 
+14:22:50.193 DEBUG AUTOMATION - Fill Last Name field: 
+14:22:50.405 DEBUG AUTOMATION - Click on the button
+14:22:50.582 ERROR AUTOMATION - First Name field is wrong
+14:22:50.719 ERROR AUTOMATION - Last Name field is wrong
+14:22:54.190 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
+14:22:54.336 INFO  AUTOMATION - Test: noFillFirstNamefillLastName
+14:22:54.354 DEBUG AUTOMATION - Fill First Name field: 
+14:22:54.536 DEBUG AUTOMATION - Fill Last Name field: Kreiger
+14:22:54.757 DEBUG AUTOMATION - Click on the button
+14:22:54.891 ERROR AUTOMATION - First Name field is wrong
+14:22:59.735 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
+14:22:59.882 INFO  AUTOMATION - Test: fillFirstNamefillLastName
+14:22:59.897 DEBUG AUTOMATION - Fill First Name field: Anderson
+14:23:00.058 DEBUG AUTOMATION - Fill Last Name field: Tillman
+14:23:00.274 DEBUG AUTOMATION - Click on the button

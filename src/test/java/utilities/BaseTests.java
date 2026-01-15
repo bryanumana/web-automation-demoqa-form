@@ -21,7 +21,7 @@ public class BaseTests {
         try {
             assertThat(page.locator("h1.text-center"))
                     .hasText(expectedTitle);
-            AllureUtils.infoStepWithScreenshot(page, "Open website: " + url);
+            AllureUtils.debugStepWithScreenshot(page, "Open website: " + url);
         } catch (AssertionError e) {
             AllureUtils.errorStepWithScreenshot(page, "Error opening page");
             throw e;

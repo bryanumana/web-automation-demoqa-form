@@ -7,8 +7,8 @@ import io.qameta.allure.Step;
 public class AllureUtils {
 
     @Step("{stepName}")
-    public static void infoStepWithScreenshot(Page page, String stepName) {
-        Logs.info(stepName);
+    public static void debugStepWithScreenshot(Page page, String stepName) {
+        Logs.debug(stepName);
         attachScreenshot(page);
     }
 

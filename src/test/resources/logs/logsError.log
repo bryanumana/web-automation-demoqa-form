@@ -1,0 +1,8 @@
+14:22:44.903 INFO  AUTOMATION - Test: fillFirstNameNoFillLastName
+14:22:45.424 ERROR AUTOMATION - Last Name field is wrong
+14:22:50.008 INFO  AUTOMATION - Test: noFillFirstNameNoFillLastName
+14:22:50.582 ERROR AUTOMATION - First Name field is wrong
+14:22:50.719 ERROR AUTOMATION - Last Name field is wrong
+14:22:54.336 INFO  AUTOMATION - Test: noFillFirstNamefillLastName
+14:22:54.891 ERROR AUTOMATION - First Name field is wrong
+14:22:59.882 INFO  AUTOMATION - Test: fillFirstNamefillLastName

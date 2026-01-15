@@ -15,7 +15,6 @@ public class SumbitActions {
         this.sumbitPage = new SumbitPage(page);
     }
 
-
     public void validateSubmitButtonIsVisible(Page page) {
         try {
             assertThat(sumbitPage.submitButton())
@@ -29,7 +28,7 @@ public class SumbitActions {
     public void clickSubmit(Page page) {
         validateSubmitButtonIsVisible(page);
         sumbitPage.submitButton().click();
-        AllureUtils.infoStepWithScreenshot(page, "Click on the button");
+        AllureUtils.debugStepWithScreenshot(page, "Click on the button");
     }
 
 }
