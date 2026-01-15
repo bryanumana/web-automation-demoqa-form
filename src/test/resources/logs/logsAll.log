@@ -1,24 +1,18 @@
-14:22:44.742 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
-14:22:44.903 INFO  AUTOMATION - Test: fillFirstNameNoFillLastName
-14:22:44.925 DEBUG AUTOMATION - Fill First Name field: Genaro
-14:22:45.065 DEBUG AUTOMATION - Fill Last Name field: 
-14:22:45.267 DEBUG AUTOMATION - Click on the button
-14:22:45.424 ERROR AUTOMATION - Last Name field is wrong
-14:22:49.865 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
-14:22:50.008 INFO  AUTOMATION - Test: noFillFirstNameNoFillLastName
-14:22:50.020 DEBUG AUTOMATION - Fill First Name field: 
-14:22:50.193 DEBUG AUTOMATION - Fill Last Name field: 
-14:22:50.405 DEBUG AUTOMATION - Click on the button
-14:22:50.582 ERROR AUTOMATION - First Name field is wrong
-14:22:50.719 ERROR AUTOMATION - Last Name field is wrong
-14:22:54.190 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
-14:22:54.336 INFO  AUTOMATION - Test: noFillFirstNamefillLastName
-14:22:54.354 DEBUG AUTOMATION - Fill First Name field: 
-14:22:54.536 DEBUG AUTOMATION - Fill Last Name field: Kreiger
-14:22:54.757 DEBUG AUTOMATION - Click on the button
-14:22:54.891 ERROR AUTOMATION - First Name field is wrong
-14:22:59.735 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
-14:22:59.882 INFO  AUTOMATION - Test: fillFirstNamefillLastName
-14:22:59.897 DEBUG AUTOMATION - Fill First Name field: Anderson
-14:23:00.058 DEBUG AUTOMATION - Fill Last Name field: Tillman
-14:23:00.274 DEBUG AUTOMATION - Click on the button
+15:15:51.567 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
+15:15:51.736 INFO  AUTOMATION - Test: nofillMobile
+15:15:51.751 DEBUG AUTOMATION - Fill Mobile field: 
+15:15:51.990 DEBUG AUTOMATION - Click on the button
+15:15:52.145 ERROR AUTOMATION - Mobile field is wrong
+15:15:56.908 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
+15:15:57.063 INFO  AUTOMATION - Test: fillValidMobileElevenDigits
+15:15:57.078 DEBUG AUTOMATION - Fill Mobile field: 71843027613
+15:15:57.290 DEBUG AUTOMATION - Click on the button
+15:16:00.305 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
+15:16:00.432 INFO  AUTOMATION - Test: fillValidMobileTenDigits
+15:16:00.445 DEBUG AUTOMATION - Fill Mobile field: 1741341714
+15:16:00.632 DEBUG AUTOMATION - Click on the button
+15:16:05.519 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
+15:16:05.653 INFO  AUTOMATION - Test: fillValidMobileNineDigits
+15:16:05.666 DEBUG AUTOMATION - Fill Mobile field: 077917971
+15:16:05.853 DEBUG AUTOMATION - Click on the button
+15:16:06.047 ERROR AUTOMATION - Mobile field is wrong

@@ -2,7 +2,6 @@ package tests;
 
 import actions.SumbitActions;
 import com.microsoft.playwright.Page;
-import com.microsoft.playwright.options.AriaRole;
 import net.datafaker.Faker;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
@@ -22,28 +21,6 @@ public class ExampleTest extends BaseTests {
     private final Faker faker = new Faker();
 
     @Test
-    public void fillNameAndLastName(Page page) {
-
-        Logs.info("Escribiendo el First Name");
-
-        AllureUtils.debugStepWithScreenshot(page, "Diligenciando el First Name");
-
-        Logs.info("Escribiendo el Last Name");
-
-        AllureUtils.debugStepWithScreenshot(page, "Diligenciando el Last Name");
-
-    }
-
-    @Test
-    public void fillEmail(Page page) {
-
-        Logs.info("Escribiendo el Email");
-        page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("name@example.com"))
-                .fill(faker.internet().emailAddress());
-        AllureUtils.debugStepWithScreenshot(page, "Escribiendo el Email");
-    }
-
-    @Test
     public void selectGender(Page page) {
 
         Logs.info("Seleccionando el gender");
@@ -56,8 +33,7 @@ public class ExampleTest extends BaseTests {
     public void fillMobileNumber(Page page) {
 
         Logs.info("Escribiendo el Numero Telefono");
-        page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Mobile Number"))
-                .fill(String.valueOf(faker.number().randomNumber(10)));
+
         AllureUtils.debugStepWithScreenshot(page, "Escribiendo el Numero Telefono");
     }
 

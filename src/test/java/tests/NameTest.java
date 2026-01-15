@@ -2,7 +2,6 @@ package tests;
 
 import actions.NameActions;
 import actions.SumbitActions;
-import annotations.PruebaExitosa;
 import com.microsoft.playwright.Page;
 import net.datafaker.Faker;
 import org.junit.jupiter.api.Test;
@@ -15,7 +14,6 @@ public class NameTest extends BaseTests {
     private String lastName = faker.name().lastName();
 
     @Test
-    @PruebaExitosa
     public void fillFirstNamefillLastName(Page page) {
         SumbitActions sumbitActions = new SumbitActions(page);
         NameActions nameActions = new NameActions(page);
@@ -32,7 +30,6 @@ public class NameTest extends BaseTests {
     }
 
     @Test
-    @PruebaExitosa
     public void noFillFirstNamefillLastName(Page page) {
         SumbitActions sumbitActions = new SumbitActions(page);
         NameActions nameActions = new NameActions(page);
@@ -49,7 +46,6 @@ public class NameTest extends BaseTests {
     }
 
     @Test
-    @PruebaExitosa
     public void fillFirstNameNoFillLastName(Page page) {
         SumbitActions sumbitActions = new SumbitActions(page);
         NameActions nameActions = new NameActions(page);
@@ -66,7 +62,6 @@ public class NameTest extends BaseTests {
     }
 
     @Test
-    @PruebaExitosa
     public void noFillFirstNameNoFillLastName(Page page) {
         SumbitActions sumbitActions = new SumbitActions(page);
         NameActions nameActions = new NameActions(page);

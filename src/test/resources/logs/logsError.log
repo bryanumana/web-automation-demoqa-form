@@ -1,8 +1,6 @@
-14:22:44.903 INFO  AUTOMATION - Test: fillFirstNameNoFillLastName
-14:22:45.424 ERROR AUTOMATION - Last Name field is wrong
-14:22:50.008 INFO  AUTOMATION - Test: noFillFirstNameNoFillLastName
-14:22:50.582 ERROR AUTOMATION - First Name field is wrong
-14:22:50.719 ERROR AUTOMATION - Last Name field is wrong
-14:22:54.336 INFO  AUTOMATION - Test: noFillFirstNamefillLastName
-14:22:54.891 ERROR AUTOMATION - First Name field is wrong
-14:22:59.882 INFO  AUTOMATION - Test: fillFirstNamefillLastName
+15:15:51.736 INFO  AUTOMATION - Test: nofillMobile
+15:15:52.145 ERROR AUTOMATION - Mobile field is wrong
+15:15:57.063 INFO  AUTOMATION - Test: fillValidMobileElevenDigits
+15:16:00.432 INFO  AUTOMATION - Test: fillValidMobileTenDigits
+15:16:05.653 INFO  AUTOMATION - Test: fillValidMobileNineDigits
+15:16:06.047 ERROR AUTOMATION - Mobile field is wrong
