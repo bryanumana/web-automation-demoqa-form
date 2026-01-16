@@ -2,6 +2,7 @@ package tests;
 
 import actions.EmailActions;
 import actions.SumbitActions;
+import annotations.Bug;
 import com.microsoft.playwright.Page;
 import net.datafaker.Faker;
 import org.junit.jupiter.api.Test;
@@ -37,6 +38,7 @@ public class EmailTest extends BaseTests {
     }
 
     @Test
+    @Bug
     public void noFillEmail(Page page) {
         SumbitActions sumbitActions = new SumbitActions(page);
         EmailActions emailActions = new EmailActions(page);

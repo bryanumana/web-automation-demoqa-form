@@ -2,6 +2,7 @@ package tests;
 
 import actions.NameActions;
 import actions.SumbitActions;
+import annotations.Bug;
 import com.microsoft.playwright.Page;
 import net.datafaker.Faker;
 import org.junit.jupiter.api.Test;
@@ -70,6 +71,23 @@ public class NameTest extends BaseTests {
 
         nameActions.fillFirstName("");
         nameActions.fillLastName("");
+
+        sumbitActions.clickSubmit(page);
+
+        nameActions.fillFirstNameFailed();
+        nameActions.fillLastNameFailed();
+    }
+
+    @Test
+    @Bug
+    public void fillWithSpecialsCharacters(Page page) {
+        SumbitActions sumbitActions = new SumbitActions(page);
+        NameActions nameActions = new NameActions(page);
+
+        Logs.info("Test: noFillFirstNameNoFillLastName");
+
+        nameActions.fillFirstName("@");
+        nameActions.fillLastName("1");
 
         sumbitActions.clickSubmit(page);
 

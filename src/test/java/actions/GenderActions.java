@@ -30,19 +30,19 @@ public class GenderActions {
     public void selectGenderMale(Page page) {
         validateGenderIsVisible(page);
         genderPage.maleRadio().click();
-        AllureUtils.debugStepWithScreenshot(page, "Fill Email field: " + "Male");
+        AllureUtils.debugStepWithScreenshot(page, "Select button: " + "Male");
     }
 
     public void selectGenderFemale(Page page) {
         validateGenderIsVisible(page);
         genderPage.femaleRadio().click();
-        AllureUtils.debugStepWithScreenshot(page, "Fill Email field: " + "Female");
+        AllureUtils.debugStepWithScreenshot(page, "Select button: " + "Female");
     }
 
     public void selectGenderOther(Page page) {
         validateGenderIsVisible(page);
         genderPage.otherRadio().click();
-        AllureUtils.debugStepWithScreenshot(page, "Fill Email field: " + "Other");
+        AllureUtils.debugStepWithScreenshot(page, "Select button: " + "Other");
     }
 
     public void selectGenderSuccess() {

@@ -2,6 +2,7 @@ package tests;
 
 import actions.CurrentAddressActions;
 import actions.SumbitActions;
+import annotations.Bug;
 import com.microsoft.playwright.Page;
 import net.datafaker.Faker;
 import org.junit.jupiter.api.Test;
@@ -26,6 +27,7 @@ public class CurrentAddressTest extends BaseTests {
     }
 
     @Test
+    @Bug
     public void noFillCurrentAddress(Page page) {
         SumbitActions sumbitActions = new SumbitActions(page);
         CurrentAddressActions currentAddressActions = new CurrentAddressActions(page);
