@@ -16,6 +16,7 @@ public class HobbiesTest extends BaseTests {
         HobbiesActions hobbiesActions = new HobbiesActions(page);
 
         Logs.info("Test: selectHobbiesSportsReadingMusic");
+
         hobbiesActions.selectHobbieSports(page);
         hobbiesActions.selectHobbieReading(page);
         hobbiesActions.selectHobbieMusic(page);
@@ -30,6 +31,7 @@ public class HobbiesTest extends BaseTests {
         HobbiesActions hobbiesActions = new HobbiesActions(page);
 
         Logs.info("Test: selectHobbiesSportsReading");
+
         hobbiesActions.selectHobbieSports(page);
         hobbiesActions.selectHobbieReading(page);
         sumbitActions.clickSubmit(page);
@@ -43,6 +45,7 @@ public class HobbiesTest extends BaseTests {
         HobbiesActions hobbiesActions = new HobbiesActions(page);
 
         Logs.info("Test: selectHobbiesSportsMusic");
+
         hobbiesActions.selectHobbieSports(page);
         hobbiesActions.selectHobbieMusic(page);
         sumbitActions.clickSubmit(page);
@@ -56,6 +59,7 @@ public class HobbiesTest extends BaseTests {
         HobbiesActions hobbiesActions = new HobbiesActions(page);
 
         Logs.info("Test: selectHobbiesSports");
+
         hobbiesActions.selectHobbieSports(page);
         sumbitActions.clickSubmit(page);
 
@@ -68,6 +72,7 @@ public class HobbiesTest extends BaseTests {
         HobbiesActions hobbiesActions = new HobbiesActions(page);
 
         Logs.info("Test: selectHobbiesMusic");
+
         hobbiesActions.selectHobbieMusic(page);
         sumbitActions.clickSubmit(page);
 
@@ -80,6 +85,7 @@ public class HobbiesTest extends BaseTests {
         HobbiesActions hobbiesActions = new HobbiesActions(page);
 
         Logs.info("Test: selectHobbiesReading");
+
         hobbiesActions.selectHobbieReading(page);
         sumbitActions.clickSubmit(page);
 
@@ -107,6 +113,7 @@ public class HobbiesTest extends BaseTests {
         HobbiesActions hobbiesActions = new HobbiesActions(page);
 
         Logs.info("Test: noSelectHobbies");
+
         sumbitActions.clickSubmit(page);
 
         hobbiesActions.selectHobbiesFailed();

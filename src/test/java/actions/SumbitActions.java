@@ -28,6 +28,7 @@ public class SumbitActions {
     public void clickSubmit(Page page) {
         validateSubmitButtonIsVisible(page);
         sumbitPage.submitButton().click();
+        page.waitForTimeout(500);
         AllureUtils.debugStepWithScreenshot(page, "Click on the button");
     }
 

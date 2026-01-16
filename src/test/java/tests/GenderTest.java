@@ -15,6 +15,7 @@ public class GenderTest extends BaseTests {
         GenderActions genderActions = new GenderActions(page);
 
         Logs.info("Test: selectGenderMale");
+
         genderActions.selectGenderMale(page);
         sumbitActions.clickSubmit(page);
 
@@ -27,6 +28,7 @@ public class GenderTest extends BaseTests {
         GenderActions genderActions = new GenderActions(page);
 
         Logs.info("Test: selectGenderFemale");
+
         genderActions.selectGenderFemale(page);
         sumbitActions.clickSubmit(page);
 
@@ -39,6 +41,7 @@ public class GenderTest extends BaseTests {
         GenderActions genderActions = new GenderActions(page);
 
         Logs.info("Test: selectGenderOther");
+
         genderActions.selectGenderOther(page);
         sumbitActions.clickSubmit(page);
 
@@ -51,6 +54,7 @@ public class GenderTest extends BaseTests {
         GenderActions genderActions = new GenderActions(page);
 
         Logs.info("Test: noSelectGender");
+        
         sumbitActions.clickSubmit(page);
 
         genderActions.selectGenderFailed();

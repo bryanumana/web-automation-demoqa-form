@@ -20,6 +20,7 @@ public class MobileTest extends BaseTests {
         MobileActions mobileActions = new MobileActions(page);
 
         Logs.info("Test: fillValidMobileTenDigits");
+
         mobileActions.fillMobile(mobileNumerTenDigits);
         sumbitActions.clickSubmit(page);
 
@@ -32,6 +33,7 @@ public class MobileTest extends BaseTests {
         MobileActions mobileActions = new MobileActions(page);
 
         Logs.info("Test: fillValidMobileElevenDigits");
+
         mobileActions.fillMobile(mobileNumerElevenDigits);
         sumbitActions.clickSubmit(page);
 
@@ -44,6 +46,7 @@ public class MobileTest extends BaseTests {
         MobileActions mobileActions = new MobileActions(page);
 
         Logs.info("Test: fillValidMobileNineDigits");
+
         mobileActions.fillMobile(mobileNumerNineDigits);
         sumbitActions.clickSubmit(page);
 
@@ -56,6 +59,7 @@ public class MobileTest extends BaseTests {
         MobileActions mobileActions = new MobileActions(page);
 
         Logs.info("Test: noFillMobile");
+
         mobileActions.fillMobile("");
         sumbitActions.clickSubmit(page);
 

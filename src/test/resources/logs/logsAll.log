@@ -1,9 +1,20 @@
-07:21:42.448 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
-07:21:42.646 INFO  AUTOMATION - Test: fillCurrentAddress
-07:21:42.667 DEBUG AUTOMATION - Fill Current Address: Apt. 442 678 Roosevelt Alley, New Kristoferville, OK 25141
-07:21:42.956 DEBUG AUTOMATION - Click on the button
-07:21:48.707 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
-07:21:48.869 INFO  AUTOMATION - Test: noFillCurrentAddress
-07:21:48.887 DEBUG AUTOMATION - Fill Current Address: 
-07:21:49.188 DEBUG AUTOMATION - Click on the button
-07:21:49.333 ERROR AUTOMATION - Current Address is wrong
+11:08:37.622 DEBUG AUTOMATION - Open website: https://demoqa.com/automation-practice-form
+11:08:37.842 DEBUG AUTOMATION - Fill First Name field: Agustin
+11:08:38.033 DEBUG AUTOMATION - Fill Last Name field: Schoen
+11:08:38.226 DEBUG AUTOMATION - Fill Email field: valerie.pfannerstill@yahoo.com
+11:08:38.449 DEBUG AUTOMATION - Select button: Male
+11:08:38.613 DEBUG AUTOMATION - Fill Mobile field: 7253343263
+11:08:38.828 DEBUG AUTOMATION - Click on Date Of Birth
+11:08:38.999 DEBUG AUTOMATION - Select month: June
+11:08:39.165 DEBUG AUTOMATION - Select year: 1938
+11:08:39.351 DEBUG AUTOMATION - Click on Day
+11:08:39.529 DEBUG AUTOMATION - Click on txtSubjects button
+11:08:40.681 DEBUG AUTOMATION - Add subject: Math
+11:08:40.862 DEBUG AUTOMATION - Select Hobbies field: Music
+11:08:40.994 DEBUG AUTOMATION - Select picture: kenny.jpg
+11:08:41.127 DEBUG AUTOMATION - Fill Current Address: Apt. 538 7081 Dolly Inlet, Lake Zacheryland, ND 12485
+11:08:41.311 DEBUG AUTOMATION - Click on State
+11:08:41.458 DEBUG AUTOMATION - Fill State: NCR
+11:08:41.627 DEBUG AUTOMATION - Click on City
+11:08:41.752 DEBUG AUTOMATION - Fill City: Delhi
+11:08:42.421 DEBUG AUTOMATION - Click on the button

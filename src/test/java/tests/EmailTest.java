@@ -19,6 +19,7 @@ public class EmailTest extends BaseTests {
         EmailActions emailActions = new EmailActions(page);
 
         Logs.info("Test: fillValidateEmail");
+
         emailActions.fillEmail(email);
         sumbitActions.clickSubmit(page);
 
@@ -31,6 +32,7 @@ public class EmailTest extends BaseTests {
         EmailActions emailActions = new EmailActions(page);
 
         Logs.info("Test: fillInvalidateEmail");
+
         emailActions.fillEmail("correo");
         sumbitActions.clickSubmit(page);
 
@@ -44,6 +46,7 @@ public class EmailTest extends BaseTests {
         EmailActions emailActions = new EmailActions(page);
 
         Logs.info("Test: noFillEmail");
+
         emailActions.fillEmail("");
         sumbitActions.clickSubmit(page);
 
