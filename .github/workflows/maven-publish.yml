@@ -1,8 +1,11 @@
-name: Java CI - Playwright Tests
+name: Java CI - Playwright Tests + Allure Report
 
 on:
   push:
     branches: [ "main", "master" ]
+
+permissions:
+  contents: write
 
 jobs:
   test:
@@ -27,8 +30,17 @@ jobs:
       - name: Instalar dependencias
         run: mvn clean install -DskipTests
 
-      - name: Instalar browsers de Playwright
+      - name: Instalar browsers Playwright
         run: mvn exec:java -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install"
 
       - name: Ejecutar tests
         run: mvn test
+
+      - name: Generar reporte Allure
+        run: mvn allure:report
+
+      - name: Deploy reporte a GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: target/site/allure-maven-plugin
