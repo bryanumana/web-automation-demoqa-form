@@ -2,9 +2,9 @@ name: Java CI - Playwright Tests
 
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   pull_request:
-    branches: ["main"]
+    branches: [ "main" ]
 
 jobs:
   test:
@@ -29,5 +29,8 @@ jobs:
       - name: Instalar dependencias
         run: mvn clean install -DskipTests
 
-      - name: Ejecutar tests (Playwright)
+      - name: Instalar browsers de Playwright
+        run: mvn exec:java -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install"
+
+      - name: Ejecutar tests
         run: mvn test
