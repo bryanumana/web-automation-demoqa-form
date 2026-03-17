@@ -2,9 +2,7 @@ name: Java CI - Playwright Tests
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "master" ]
 
 jobs:
   test:
